@@ -1,0 +1,390 @@
+body {
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+    background-color: black;
+    
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.wrapper {
+    max-width: 1920px;
+    margin: auto;
+}
+.wrapper img{
+    width: 1920px;
+    
+}
+
+.ball img{
+    padding-top: 120px;
+}
+
+/* .wrapper h4{
+    padding-top: 50px;
+    font-size: 15rem;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrapper h4{
+    color: transparent;
+    position: relative;
+}
+
+.wrapper h4::before {
+   content: "#chanwoo";
+   position: absolute;
+   width: 0%;
+   height: 100%;
+   overflow: hidden;
+   color: white;
+   border-right: 3px solid #fff;
+   transition: 1s ease-in-out;
+}
+
+.wrapper h4:hover::before{
+   width: 1255px;
+} */
+
+
+
+
+h1 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+.btns {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.btns .container {
+  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-family: 'helvetica';
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 75px 0;
+    z-index: 100000;
+}
+header.stinky{
+    padding: 50px 0;
+    color: #000;
+    border-bottom:  1px solid #fff;
+    background-color: #000 ;
+}
+
+
+
+
+
+
+
+.btns__menu {
+    position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+}
+
+.btns__menu .btn {
+    font-size: 40px;
+    font-weight: 200;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    border-radius: 6px;
+    margin: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.btns__menu .btn:hover {
+  
+    background-color: #fff;
+    border-radius: 100px;
+    color: black;
+    
+    
+}
+
+.arrow-up {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .3s;
+    
+}
+.arrow-up span {
+    font-size: 50px;
+}
+.arrow-up.show {
+    opacity: 1;
+}
+.Gallery img{
+    width: 20%;
+    object-fit: cover;
+    padding: 20px 30px;
+    padding-top: 30px;
+  
+}
+
+#about h1 {
+    font-weight: 400;
+    border-bottom: solid 1px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.Scroll
+{   
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+.Scroll .scroll{
+    width: 100%;
+    display: flex;
+}
+
+.Scroll .scroll div{
+    color: #000;
+    font-size: 4em;
+    background-color: #fae500;
+    white-space: nowrap;
+    font-weight: 900;
+    text-transform: uppercase;
+    animation: animate 40s linear infinite;
+}
+.Scroll .scroll div:nth-child(2)
+{
+    animation: animate2 40s linear infinite;
+    animation-delay:-20s;
+}
+
+.Scroll .scroll div span{
+    -webkit-text-stroke: 2px #000 ;
+    color: transparent;
+}
+
+
+@keyframes animate
+{
+    0%
+{
+    transform: translatex(100%);
+}
+100%
+{
+    transform: translatex(-100%);
+}
+}
+
+@keyframes animate2
+{
+    0%
+{
+    transform: translatex(0%);
+}
+100%
+{
+    transform: translatex(-200%);
+}
+}
+
+.Scroll .scroll.text1
+{
+    transform: rotate(11deg) translateY(10px) translateX(-200px);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.Scroll .scroll.text2
+{
+    transform: rotate(-11deg) translateY(-70px) translateX(-200px);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+#skills h1{
+    font-weight: 400;
+    padding: 10px;
+    border-bottom: solid 1px;
+    padding-bottom: 20px;
+    text-align: center;
+    
+}
+
+#contact h1{
+    font-weight: 400;
+  
+    border-bottom: solid 1px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#contact .omg img{
+    max-width: 28.5%;
+    padding: 15px 10px;
+    position: relative;
+    padding-top: 30px;
+    
+}
+
+#contact .omg img:hover{
+    opacity: 50%;
+}
+#contact .back img
+{
+    max-width: 100%;
+    padding-top: 20px;
+    position: relative;
+}
+
+#works h1 {
+    font-weight: 400;
+    border-bottom: solid 1px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#works .img-gallery {
+    width: 100%;
+    margin: 40px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 항상 4열로 고정 */
+    grid-gap: 20px; /* 간격 조정 */
+    cursor: pointer;
+    padding-top: 30px;
+
+}
+
+#works .img-gallery img {
+    width: 100%;
+}
+
+#works .img-gallery img:hover {
+    transform: scale(0.8) rotate(-15deg);
+}
+
+#skills .space img{
+    max-width: 45%;
+}
+
+
+.space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    
+}
+
+.space img {
+    animation: moveUpDown 1s infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-60px);
+    }
+}
+#skills{
+    background-image: url(img/bbbb.png);
+    background-size: 3000px;
+    background-repeat : no-repeat; 
+    background-position: center;
+}
+.back2 h2{
+    font-size: 6em;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.back2 h2 span{
+   transition: 0.5s; 
+}
+
+.back2 h2:hover span:nth-child(1)
+{
+    margin-right: 10px;
+}
+
+
+.back2 h2:hover span:nth-child(1):after
+{
+    content: "'";
+}
+
+
+.back2 h2:hover span:nth-child(2)
+{
+    margin-left: 40px;
+}
+
+.back2 h2:hover  span {
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff,
+                 0 0 120px #fff,
+                 0 0 160px #fff;
+}
+
+#about{
+    padding-top: 180px;
+}
+
+#home{
+    padding-top: 200px;
+}
+#works{
+    padding-top: 180px;
+}
+#contact{
+    padding-top: 180px;
+}
+#skills{
+    padding-top: 10px;
+}
